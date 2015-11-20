@@ -1,51 +1,114 @@
 var themes = {
   'trees': {
-    'subjects': {
-      1: ['elm', 'pine', 'tree', 'larch'],
-      2: ['maple', 'sapling', 'bark', 'olive'],
-      3: ['sycamore']
-    },
-    'nouns': {
-      1: ['branch', 'leaf', 'sap', 'trunk', 'shoot', 'root', 'seed', 'hue'],
-      2: ['branches', 'hollows']
-    },
-    'verbs': {
-      1: ['shed', 'grow', 'grasp', 'spread'],
-      2: ['whisper', 'sunder']
-    },
-    'adjectives': {
-      1: ['old', 'grave'],
-      2: ['ancient', 'gnarled', 'cracked', 'weathered', 'scaly', 'sashed'],
-      3: ['hardened', 'matronly']
-    },
-    'adverbs': {
-      2: ['softly', 'grimly', 'sadly']
-    },
-    'prepositions': {
-      1: ['with', 'on'],
-      2: ['over', 'throughout']
-    },
-    'conjunctions': {
-      1: ['and', 'but', 'if'],
-      2: ['because']
-    },
-    'determiners': {
-      1: ['a', 'this', 'the']
-    },
-    'colors': {
-      1: ['red', 'gold', 'green', 'black', 'brown'],
-      2: ['golden', 'orange', 'purple']
-    }
-  },
-  
+    'subjects': [
+      ['elm', 'pine', 'tree', 'larch'],
+      ['maple', 'sapling', 'bark', 'olive'],
+      ['sycamore']
+    ],
+    'nouns': [
+      ['branch', 'leaf', 'sap', 'trunk', 'shoot', 'root', 'seed', 'hue'],
+      ['branches', 'hollows']
+    ],
+    'verbs': [
+      ['shed', 'grow', 'grasp', 'spread'],
+      ['whisper', 'sunder']
+    ],
+    'adjectives': [
+      ['old', 'grave'],
+      ['ancient', 'gnarled', 'cracked', 'weathered', 'scaly', 'sashed'],
+      ['hardened', 'matronly']
+    ],
+    'adverbs': [
+      [],
+      ['softly', 'grimly', 'sadly']
+    ],
+    'prepositions': [
+      ['with', 'on'],
+      ['over', 'throughout']
+    ],
+    'conjunctions': [
+      ['and', 'but', 'if'],
+      ['because']
+    ],
+    'determiners': [
+      ['a', 'the']
+    ],
+    'colors': [
+      ['red', 'gold', 'green', 'black', 'brown'],
+      ['golden', 'orange', 'purple']
+    ]
+  }
+  //Add comma above and next theme here
 }
 
-//
-// console.log(themes['trees']['subjects'][1][2])
-// function subject(array) {
-//   for (var i = 0; i < array.length; i++) {
-//     console.log(array[i]);
+//Function for choosing a random word from a syllabus key
+function randomWord(array) {
+  return array[Math.round(Math.random()*(array.length-1))]
+}
+
+//GRAMMAR TEMPLATES
+
+//checking if subject/noun starts with a vowel
+// if (vowels.indexOf(subj.charAt(0)) > -1) {
+//   var determ = 'an';
+//   haiku[0].unshift(determ);
+// } else {
+//     var deter = randomWord(theme['determiners'][0]);
+//     haiku[0].unshift(deter);
+//   };
+
+//checking if subject/noun is plural
+// var verb = randomWord(theme['verbs'][0]);
+// //Checking for subject/noun plurality
+//   if (subj.charAt(subj.length-1) !== 's') {
+//     verb = verb.concat('s');
+//     haiku[0].push(verb);
+//   } else {
+//     haiku[0].push(verb);
 //   }
-// }
-// var one = themes['trees']['subjects'][1]
-// subject(one)
+
+//Empty haiku variable
+var haiku = [[], [], []];
+var vowels = ['a', 'e', 'i', 'o', 'u']
+//Line variations for five syllables
+var line50 = function(theme) {
+  var subj = randomWord(theme['subjects'][0]);
+  haiku[0].push(subj);
+  //checking to conjugate for nouns starting with vowels
+    if (vowels.indexOf(subj.charAt(0)) > -1) {
+      var determ = 'an';
+      haiku[0].unshift(determ);
+    } else {
+        var deter = randomWord(theme['determiners'][0]);
+        haiku[0].unshift(deter);
+      };
+  var verb = randomWord(theme['verbs'][0]);
+  //Checking for subject/noun plurality
+    if (subj.charAt(subj.length-1) !== 's') {
+      verb = verb.concat('s');
+      haiku[0].push(verb);
+    } else {
+      haiku[0].push(verb);
+    }
+  var adv = randomWord(theme['adverbs'][1]);
+  haiku[0].push(adv);
+  return haiku[0];
+}
+
+//Line variations for seven syllables
+var line70 = function(theme) {
+  var noun = randomWord(theme['nouns'][1]);
+  haiku[1].push(noun);
+  var verb = randomWord(theme['verbs'][0]);
+  //Checking for subject/noun plurality
+    if (subj.charAt(subj.length-1) !== 's') {
+      verb = verb.concat('s');
+      haiku[0].push(verb);
+    } else {
+      haiku[0].push(verb);
+    }
+  var adv = randomWord(theme['adverbs'][1]);
+  haiku[0].push(adv);
+  return haiku[0];
+}
+console.log(line50(themes['trees']));
