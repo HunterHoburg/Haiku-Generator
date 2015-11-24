@@ -68,5 +68,5 @@ var treeHaiku = [[], [], []];
 function line5() {
   var determ = (rando(trees[7][0]))
   treeHaiku[0].push(determ);
-  var remove1 = 
+  var remove1 =
 }
