@@ -2,9 +2,11 @@
 <html lang='en'>
   <head>
     <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600italic,400italic,300italic' rel='stylesheet' type='text/css'>
     <title>H-IQ 17</title>
     <script src='themes.js'></script>
     <script src='conceptTest.js'></script>
+    <script src='functions.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/uikit.min.css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/components/slider.css'>
     <link rel='stylesheet' href='jquery-ui.min.css'>
@@ -14,24 +16,43 @@
     <div class='uk-offcanvas' id='offcanvas-1'>
       <div class='uk-offcanvas-bar'>
         <ul class='uk-nav uk-nav-offcanvas left' data-uk-nav>
-          <li class='uk-text-center'>
+          <li id='about' class='uk-text-center navlink'>
             <a href='#'>About</a>
           </li>
-          <li class='uk-text-center'>
+          <li id='why' class='uk-text-center navlink'>
             <a href='#'>Why Haiku?</a>
           </li>
-          <li class='uk-text-center'>
+          <li id='next' class='uk-text-center navlink'>
             <a href='#'>What's Next</a>
           </li>
         </ul>
+        <div>
+        <div class='uk-panel about'>
+          <h4 class='panel-title'>About H-IQ 17</h4>
+          <p>
+            H-IQ 17 is a simple haiku-writing program/AI. Her name stands for <b>'Human-Imitation Quasipoet v.17'</b>. She was created with about 17 cups of <b>coffee</b>, there are 17 <b>syllables</b> in most haikus, and her creator was part of the 17th <b>class</b> at <b class='gschool'>Galvanize</b>.<br><br>
+            I've always enjoyed writing poetry, and while I am certainly <b>not a master</b>, I've put a lot of thought into why <b>we enjoy a good poem</b>. On one hand, we assign meaning to words, even if they would seem <b>out of place</b> in a literal sense. I made this program in the hopes that some of us will <b>rethink</b> why we write poetry, and <b>improve</b> our product because of it.<br><br>H-IQ 17 might not always pass the <b>Turing test</b>, but she'll certainly pass the test to win your heart. You're also welcome to <b>plagiarize</b> these poems - if you tell someone about H-IQ 17 in return so she doesn't get lonely. <b>Enjoy!</b>
+          </p>
+        </div>
+        <div class='uk-panel why'>
+          <h4 class='panel-title'>Why Haiku?</h4>
+          <p>
+            Haiku has existed as a Japanese art form since the <b>7th century</b>, and has many different forms in Japanese; however, in Western culture these poems are typically expressed in a <b>5-7-5</b> syllable count, as you'll find them here.<br><br>
+            English is a <b>complex</b> language in the sense that you can have things spelled the same way, but sound completely different. Take, for instance, the words <b>cough</b>, <b>through</b>, <b>tough</b>, and <b>bough</b>. They're spelled the same, but they're all pronounced differently.<br><br>Haiku is simpler in the sense that it <b>doesn't rhyme</b>; however, it can be difficult to count syllables, since haiku is always written in a <b>5-7-5</b> <em>on</em>; an <em>on</em> is essentially a phonetic sound in the Japanese language. While Japanese words can carry more meaning, it provides a <b>unique challenge</b> to create whole concepts in Western haiku.
+          </p>
+        </div>
+        <div class='uk-panel next'>
+          <h4 class='panel-title'>What's Next for H-IQ 17</h4>
+          <p>
+            H-IQ 17 would like to join forces with an AI capable of <b>conceptualizing</b> topics and suggesting new words; she would then take these words and organize them by <b>syllable</b>, give them <b>grammar</b>, and then write more <b>beautiful poems</b> with the words.<br><br>If you have any suggestions or questions for H-IQ 17 or the website, feel free to <b>contact</b> her human servant!
+          </p>
+        </div>
+      </div>
       </div>
     </div>
     <div class='uk-grid'>
-      <div class='uk-width-2-2 buffer'>
-
-      </div>
       <div class='uk-width-1-4'>
-        <h1 class='title'>HI-Q<b>17</b></h1>
+        <h1 class='title'>H-IQ<b>17</b></h1>
         <div class='subtitle'>
           Human-Imitation QuasiPoet v.17
         </div>
@@ -39,26 +60,25 @@
       <div data-uk-slider="{infinite: false}" class='uk-width-3-5'>
         <div class="uk-slider-container">
           <ul class="uk-slider category uk-text-middle">
-            <a id='noLink' href='#'><li id='trees' class='red card'>
-            Trees
-
+            <a id='noLink' href='#'><li id='trees' class='one card'>
+            <span>Trees</span>
             </li></a>
-            <a id='noLink' href='#'><li id='fish' class='blue card'>
+            <a id='noLink' href='#'><li id='fish' class='two card'>
             Fish
             </li></a>
-            <a id='noLink' href='#'><li id='mammals' class='green card'>
+            <a id='noLink' href='#'><li id='mammals' class='three card'>
               Mammals
             </li></a>
-            <a id='noLink' href='#'><li id='water' class='blue card'>
+            <a id='noLink' href='#'><li id='water' class='four card'>
               Water
             </li></a>
-            <a id='noLink' href='#'><li id='autumn' class='red card'>
+            <a id='noLink' href='#'><li id='autumn' class='five card'>
               Autumn
             </li></a>
-            <a id='noLink' href='#'><li id='winter' class='blue card'>
+            <a id='noLink' href='#'><li id='winter' class='six card'>
               Winter
             </li></a>
-            <a id='noLink' href='#'><li id='spring' class='green card'>
+            <a id='noLink' href='#'><li id='spring' class='seven card'>
               Spring
             </li></a>
           </ul>
@@ -74,10 +94,10 @@
       <div class='uk-width-2-2 buffer2'>
 
       </div>
-      <div class='uk-width-3-10 leftBuffer'>
+      <div class='uk-width-1-10 leftBuffer'>
 
       </div>
-      <div class='uk-width-5-10 poemPlace'>
+      <div class='uk-width-9-10 poemPlace'>
 
       </div>
     </div>

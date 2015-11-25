@@ -1,6 +1,5 @@
-.buffer {
-  height: 2em;
-}
+/*font-family: 'Open Sans', sans-serif;*/
+
 .buffer2 {
   height: 3em;
 }
@@ -14,11 +13,14 @@ a {
   padding-left: .7em;
   color: #01354a;
   display: inline-block;
+  margin-top: .5em;
+  font-family: 'Open Sans', sans-serif;
 }
 .subtitle {
   text-align: center;
   padding-bottom: 2em;
   color: #01354a;
+  font-family: 'Open Sans', sans-serif;
 }
 .title b {
   color: #2d4c90;
@@ -39,34 +41,93 @@ a {
   margin-left: 2.5em;
   width: 15em;
 }
-.red {
-  background-color: #97b5f6;
+.one {
+  background-color: #f69797;
 }
-.blue {
-  background-color: #6f92fa;
+.two {
+  background-color: #f5be85;
 }
-.green {
-  background-color: #446cf9;
+.three {
+  background-color: #f7ed8c;
+}
+.four {
+  background-color: #c7fe81;
+}
+.five {
+  background-color: #84f48f;
+}
+.six {
+  background-color: #77f5cb;
+}
+.seven {
+  background-color: #6ff9ec;
+}
+.eight {
+  background-color: #75bcf6;
 }
 
 .card {
-  height: 8em;
+  min-height: 4em;
   min-width:8.3em;
-  color: #f1f2f5;
+  color: #000;
   text-align: center;
+  opacity: .6;
 }
 .leftBuffer {
   height: 20em;
 }
 .poemPlace {
-    /*border:1px solid #000;*/
     padding: 0;
 }
 .beautifulPoem {
+  font-size: 2em;
   font-style: italic;
   text-align: center;
   vertical-align: middle;
+  display: inline-block;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 650;
+}
+.highlight {
+  opacity: 1;
+  min-height: 5em;
+  transition-duration: 1s;
+  transition-property: min-height, opacity;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-property: opacity, min-height;
+  -moz-transition-property: opacity, min-height;
+  -o-transition-property: opacity, min-height;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
 }
 #noLink {
   text-decoration: none;
+}
+
+.panel-title {
+  color: #e6e4e1;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.uk-slider {
+  min-height: 70px !important;
+}
+p em {
+  color: #0b52bb;
+}
+p b {
+  color: #a7186e;
+}
+.uk-panel p {
+  color: #e6e4e1;
+  font-family: 'Open Sans', sans-serif;
+}
+.gschool {
+  color: #f2902a;
 }

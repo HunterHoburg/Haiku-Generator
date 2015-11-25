@@ -7,7 +7,7 @@ var themes = {
     ],
     'nouns': [
       ['branch', 'leaf', 'sap', 'trunk', 'shoot', 'root', 'seed', 'hue', 'bud', 'moss', 'thorn', 'wisp'],
-      ['branches', 'hollows', 'taproots', 'blossoms', 'calyx', 'seedling', 'flower', 'splinter']
+      ['branches', 'hollows', 'taproots', 'blossoms', 'calyx', 'seedlings', 'flowers', 'splinters']
     ],
     'verbs': [
       ['shed', 'grow', 'grasp', 'spread', 'fire', 'feed', 'yield', 'thrive'],
@@ -21,7 +21,7 @@ var themes = {
     ],
     'adverbs': [
       ['here', 'there'],
-      ['softly', 'grimly', 'sadly', 'slowly'],
+      ['softly', 'grimly', 'sadly', 'slowly', 'blindly', 'weakly'],
       ['restlessly']
     ],
     'prepositions': [
@@ -38,35 +38,32 @@ var themes = {
     'colors': [
       ['red', 'gold', 'green', 'black', 'brown'],
       ['golden', 'orange', 'purple']
-    ],
-    'functions': [
-
     ]
   },
   'mammals': {
     'subjects': [
-      ['hunt', 'cage', 'larch', 'groves'],
-      ['feral', 'sapling', 'olive', 'tree ring', 'cherry', 'forests', 'dryads', 'eden', 'garden'],
+      ['herd', 'buck', 'doe', 'fawn', 'bull', 'hound'],
+      ['creatures', 'migrants', 'fauna'],
       ['primitive']
     ],
     'nouns': [
-      ['horns', 'scent', 'teeth', 'den', 'claw', 'fur', 'tail', 'pack', 'bone', 'thorn', 'flower'],
-      ['poison', 'burrow', 'circus', 'seedling'],
-      ['vertebrae']
+      ['horns', 'den', 'claw', 'fur', 'tail', 'pack', 'bone', 'rogue'],
+      ['instincts', 'collars', 'mortals', 'motions'],
+      ['herbivore', 'predator']
     ],
     'verbs': [
-      ['prowl', 'hunt', 'pad', 'whip', 'feed', 'birth', 'growl', 'taste'],
-      ['whisper', 'sunder', 'adorn', 'flourish'],
-      ['flowering']
+      ['prowl', 'hunt', 'whip', 'feed', 'birth', 'growl'],
+      ['bellow', 'trumpet', 'scavenge', 'murder', 'burrow', 'poison'],
+      ['']
     ],
     'adjectives': [
-      ['wild', 'fierce', 'twin', 'vast'],
-      ['rabid', 'bengal', 'steely', 'lusty', 'matted', 'rabid', 'wanton', 'smokey', 'staggered', 'in bloom'],
-      ['camouflaged', 'matronly']
+      ['wild', 'fierce', 'vast'],
+      ['rabid', 'steely', 'lusty', 'rabid', 'savage', 'untrained'],
+      ['camouflaged', 'juvenile']
     ],
     'adverbs': [
       ['here', 'there'],
-      ['softly', 'grimly', 'sadly', 'slowly'],
+      ['deftly', 'madly', 'warmly', 'slowly', 'coyly', 'loosely', 'gently'],
       ['restlessly']
     ],
     'prepositions': [
@@ -90,14 +87,14 @@ var themes = {
   },
   'fish': {
     'subjects': [
-      ['school', 'fish', 'stream', 'brine', 'trout', 'boat', 'sea', 'shark'],
-      ['ocean', 'seaweed', 'vessel'],
+      ['school', 'fish', 'stream', 'brine', 'trout', 'boat', 'shark'],
+      ['ocean', 'seaweed', 'vessel', 'Ahab'],
       []
     ],
     'nouns': [
-      ['scale', 'fin', 'tail', 'mouth', 'eggs', 'teeth', 'bone', 'rift', 'raft'],
-      ['harpoons', 'mermaids', ],
-      ['vertebrae', 'bastion']
+      ['scale', 'fin', 'tail', 'mouth', 'eggs', 'bone', 'rift', 'raft'],
+      ['harpoons', 'mermaids', 'corals', 'white whales', 'chorus'],
+      ['vertebrate', 'bastion']
     ],
     'verbs': [
       ['swim', 'dart', 'sink', 'float', 'drift', 'bound', 'sing', 'nest'],
@@ -111,7 +108,7 @@ var themes = {
     ],
     'adverbs': [
       ['here', 'there', 'near'],
-      ['swiftly', 'lightly', 'briskly', 'calmly', 'surely', 'blindly'],
+      ['lightly', 'briskly', 'calmly', 'surely', 'blindly'],
       ['restlessly', 'aimlessly', 'eternally', 'hastily'],
       ['literally', 'purposefully']
     ],
@@ -124,7 +121,53 @@ var themes = {
       ['because']
     ],
     'determiners': [
-      ['this', 'the']
+      ['this', 'the', 'a', 'the']
+    ],
+    'colors': [
+      ['blue', 'brown', 'jet', 'grey'],
+      ['turquoise', 'crimson', 'pearly', 'mottled', 'spattered', 'neon', 'rainbow', 'navy', 'salmon']
+    ],
+    'functions': [
+
+    ]
+  },
+  'water': {
+    'subjects': [
+      ['sea', 'flood', 'drop', 'ice', 'pond', 'boat', 'lake', 'tide'],
+      ['oceans', 'seaweeds', 'geysers', 'channels'],
+      []
+    ],
+    'nouns': [
+      ['scale', 'fin', 'tail', 'mouth', 'eggs', 'bone', 'rift', 'raft'],
+      ['typhoons', 'monsoons', 'corals', 'white whales', 'chorus'],
+      ['vertebrate', 'bastion']
+    ],
+    'verbs': [
+      ['swim', 'dart', 'sink', 'float', 'drift', 'bound', 'sing', 'nest'],
+      ['skitter', 'gurgle'],
+      []
+    ],
+    'adjectives': [
+      ['strong', 'long', 'shy', 'bold', 'smooth', 'rough', 'quick', 'striped'],
+      ['briny', 'brackish', 'saline', 'quiet', 'scaly', 'hungry', 'soggy', 'icy'],
+      ['camouflaged', 'exotic', 'titanic', 'colossal', 'muscular', 'relentless']
+    ],
+    'adverbs': [
+      ['here', 'there', 'near'],
+      ['lightly', 'briskly', 'calmly', 'surely', 'blindly'],
+      ['restlessly', 'aimlessly', 'eternally', 'hastily'],
+      ['literally', 'purposefully']
+    ],
+    'prepositions': [
+      ['with', 'on', 'for'],
+      ['over', 'under', 'below', 'beneath']
+    ],
+    'conjunctions': [
+      ['and', 'but', 'if'],
+      ['because']
+    ],
+    'determiners': [
+      ['this', 'the', 'a', 'the']
     ],
     'colors': [
       ['blue', 'brown', 'jet', 'grey'],
