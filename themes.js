@@ -139,7 +139,7 @@ var themes = {
     ],
     'nouns': [
       ['scale', 'fin', 'tail', 'mouth', 'eggs', 'bone', 'rift', 'raft'],
-      ['typhoons', 'monsoons', 'corals', 'white whales', 'chorus'],
+      ['typhoons', 'monsoons', 'corals', 'chorus'],
       ['vertebrate', 'bastion']
     ],
     'verbs': [
