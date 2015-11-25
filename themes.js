@@ -177,5 +177,147 @@ var themes = {
 
     ]
   },
+  'autumn': {
+    'subjects': [
+      [],
+      [],
+      []
+    ],
+    'nouns': [
+      [],
+      [],
+      [],
+    ],
+    'verbs': [
+      [],
+      [],
+      []
+    ],
+    'adjectives': [
+      [],
+      [],
+      []
+    ],
+    'adverbs': [
+      [],
+      [],
+      []
+    ],
+    'prepositions': [
+      [],
+      [],
+      []
+    ],
+    'conjunctions': [
+      [],
+      [],
+      []
+    ],
+    'determiners': [
+      [],
+      [],
+      []
+    ],
+    'colors': [
+      [],
+      [],
+      []
+    ]
+  },
+  'winter': {
+    'subjects': [
+      [],
+      [],
+      []
+    ],
+    'nouns': [
+      [],
+      [],
+      [],
+    ],
+    'verbs': [
+      [],
+      [],
+      []
+    ],
+    'adjectives': [
+      [],
+      [],
+      []
+    ],
+    'adverbs': [
+      [],
+      [],
+      []
+    ],
+    'prepositions': [
+      [],
+      [],
+      []
+    ],
+    'conjunctions': [
+      [],
+      [],
+      []
+    ],
+    'determiners': [
+      [],
+      [],
+      []
+    ],
+    'colors': [
+      [],
+      [],
+      []
+    ]
+  },
+  'spring': {
+    'subjects': [
+      [],
+      [],
+      []
+    ],
+    'nouns': [
+      [],
+      [],
+      [],
+    ],
+    'verbs': [
+      [],
+      [],
+      []
+    ],
+    'adjectives': [
+      [],
+      [],
+      []
+    ],
+    'adverbs': [
+      [],
+      [],
+      []
+    ],
+    'prepositions': [
+      [],
+      [],
+      []
+    ],
+    'conjunctions': [
+      [],
+      [],
+      []
+    ],
+    'determiners': [
+      [],
+      [],
+      []
+    ],
+    'colors': [
+      [],
+      [],
+      []
+    ]
+  }
+
   //Add comma above and next theme here
 }
